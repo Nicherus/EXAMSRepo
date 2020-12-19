@@ -1,1 +1,2 @@
-# FRONT-ExamsRepo
+dev: yarn start
+build: yarn build
