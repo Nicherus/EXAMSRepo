@@ -38,7 +38,7 @@ const PostOrSearch = () => {
         if(data){
             setDisciplines(data);
         } else{
-            alert('Oops!, please check your connection to internet');
+            alert('Oops! please check your connection to internet');
         }
 
         setLoading(false);
@@ -53,7 +53,7 @@ const PostOrSearch = () => {
         if(data){
             setProfessors(data);
         } else{
-            alert('Oops!, please check your connection to internet');
+            alert('Oops! please check your connection to internet');
         }
 
         setLoading(false);
@@ -68,7 +68,7 @@ const PostOrSearch = () => {
         if(data){
             setTypes(data);
         } else{
-            alert('Oops!, please check your connection to internet');
+            alert('Oops! please check your connection to internet');
         }
 
         setLoading(false);
@@ -81,7 +81,7 @@ const PostOrSearch = () => {
 
     const checkFields = () => {
         if(pdfLink === '' || examName === ''){
-            return alert('Oops!, please fill the pdf link and exam name')
+            return alert('Oops! please fill the pdf link and exam name')
         }
         postExam();
     }
@@ -100,9 +100,9 @@ const PostOrSearch = () => {
 
         const data = await ExamService.postExam(body);
         if(data){
-            setTypes(data);
+            alert('Ok! your exam was uploaded to our servers!')
         } else{
-            alert('Oops!, please check your connection to internet');
+            alert('Oops! please check your connection to internet');
         }
 
         setLoading(false);
