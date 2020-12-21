@@ -159,6 +159,7 @@ const PostOrSearch = () => {
                     <Text>Discipline: {selectedDiscipline.name}</Text>
                     <Text>Professor: {selectedProfessor.name}</Text>
                     <Text>Exam Type: {selectedType.name}</Text>
+                    
                     <Input 
                         placeholder={'PDF Link'}
                         type={'text'}
