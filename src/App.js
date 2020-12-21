@@ -7,6 +7,10 @@ import {
 } from "react-router-dom";
 
 import { ContextProvider } from './contexts/Context';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
+import Home from './pages/Home/PostOrSearch';
+import Post from './pages/Home/Post';
 
 const App = () => {
   return (  
@@ -20,7 +24,19 @@ const App = () => {
             </Route>
             
             <Route path='/home'>
-              <h1>tela2</h1>
+              <Home />
+            </Route>
+            
+            <Route path='/post'>
+              <Post />
+            </Route>
+
+            <Route path={['/sign-in', "/login"]}>
+              <Login />
+            </Route>
+
+            <Route path='/sign-up'>
+              <SignUp />
             </Route>
 
           </ContextProvider>
